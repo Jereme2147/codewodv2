@@ -1,0 +1,264 @@
+/* font-family: 'Cabin', sans-serif;
+font-family: 'Oxygen', sans-serif;
+font-family: 'Sedgwick Ave Display', cursive;
+font-family: 'Permanent Marker', cursive; 
+font-family: 'Racing Sans One', cursive;*/
+body {
+ margin-left: 0;
+ margin-top: 0;
+ /* background-image: url("flag4.png"); */
+ background-image: url("flag9BW.png");
+}
+
+#blog {
+ display: none; 
+ width: 90%;
+ height: 100vh;
+}
+.menu h1 {
+ font-family: 'Racing Sans One', cursive;
+ font-size: 8vh;
+ color: rgba(241, 250, 238, 1);
+ border-bottom-style: solid; 
+}
+#contactList {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    /* margin-right: 10%; */
+}
+#contactList i {
+    font-size: 70px;
+    color: rgba(241, 250, 238, 1);
+}
+#contactList i:hover {
+    opacity: .6;
+}
+#contactInfo {
+    display: flex;
+    justify-content: flex-end;
+}
+.container {
+ width: 100%;
+ display: flex;
+ /* justify-content: space-evenly; */
+}
+.content {
+ width: 90%;
+}
+#content iframe {
+    /* padding-left: 10%; */
+    /* box-shadow: -10px -10px 5px red; */
+}
+.dropdown-content ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  list-style: none; 
+  text-align: right;
+  font-size: 30px;
+  margin: 0;
+}
+.dropdown-content li{
+  color: rgba(241, 250, 238, 1);
+  text-decoration: none;
+  padding: 10px 0;
+  /* border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #E63946; */
+}
+.dropdown-content li:hover{
+  opacity: .5;
+}
+.dropdown-content a{
+    color: rgba(168, 218, 220, 1);
+    text-decoration: none;
+}
+iframe {
+ margin-top: 10%;
+ /* width: 100%; */
+ height: 100vh;
+}
+#information {
+ display: none;
+ height: 100vh;
+ font-size: 25px;
+ padding: 20px;
+ color: white;
+}
+.main {
+ width: 100%;
+ display: flex;
+ justify-content: center;
+}
+.menu {
+ display: flex; 
+ flex-direction: column;
+ width: 60%;
+ text-align: right;
+ padding: 20px;
+ font-family: 'Cabin', sans-serif;
+ 
+}
+.menuBox {
+    float: right; 
+    width: 225px;
+}
+.oneBack {
+ display: none; 
+ width: 100%;
+}
+.oneBack iframe {
+ width: 40%;
+}
+.twoBack iframe {
+  width: 40%;
+}
+.results {
+ display: none; 
+ width: 90%;
+}
+#results iframe {
+    width: 75%; 
+}
+.twoBack {
+ display: none; 
+ width: 100%;
+}
+
+/* Small screens go here */
+@media screen and (max-width: 434px){
+ body {
+     background-image: url("flag9BW.png");
+     /* background-image: none; */
+     background-color: black;
+ }
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  /* background: linear-gradient(to bottom, rgba(69, 123, 157, 1),rgba(241, 250, 238, 1));  */
+ }
+ .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+ .codeWod {
+     order: 1;
+     margin-bottom: 1px;
+     text-shadow: 1px 1px 1px rgba(230, 57, 70, 1);
+
+ }
+
+ #contactInfo i{
+     /* display: none;  */
+     font-size: 30px;
+     padding: 0 10px 0 10px;
+ }
+ #contactInfo {
+    order: 2;
+    display: flex;
+    justify-content: center;
+ }
+
+ .dropbtn {
+    background-color: rgba(29, 53, 87, 1);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 1);
+    color: rgba(241, 250, 238, 1);
+    font-size: 3vh;
+    font-weight: bolder;
+    border: none;
+    width: 30vw;
+    border-radius: 5px; 
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 1px rgba(241, 250, 238, 1);
+}
+.dropbtn:hover, .dropbtn:focus {
+   opacity: .7;
+}
+.dropdown {
+    position: fixed;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    /* margin: auto;  */
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+.dropdown-content a {
+    color: black;
+    padding: 0 5px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content li{
+  color: rgba(29, 53, 87, 1);
+  text-decoration: none;
+  font-size: 20px;
+}
+.dropdown-content ul {
+    font-size: 15px;
+}
+ iframe {
+  width: 100%;
+ }
+ .main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ .menu {
+  /* text-align: center; */
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  width: 100%;
+  height: 30%;
+  padding: 20px 0 0 0;
+ }
+ .menuBox {
+     width: 160px;
+}
+ .oneBack {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+ }
+ .oneBack iframe {
+   width: 90%;
+}
+ .results {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ #results iframe {
+    width: 90%; 
+ }
+ .twoBack {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+ }
+ .twoBack iframe {
+   width: 90%;
+}
+}
+/* Large screens here */
+@media screen and (min-width: 435px){
+#contactMenu {
+  display: none;
+}
+ .dropbtn {
+ display: none; 
+ }
+}

@@ -1,0 +1,60 @@
+
+.bell {
+ position: absolute;
+ width: 65%;
+ height: 65%;
+ border-radius: 50%;
+ background-color: black;
+ left: 18%;
+ bottom: 1%;
+ z-index: 2;
+ /* position, color(s) and at what point they start/change */
+ background: radial-gradient(circle at 35% 35%, rgb(154, 152, 152) 5%, #666565 20%,  black 60%);
+}
+
+.KB {
+ display: none;
+ position: relative;
+ width: 160px;
+ height: 160px;
+ /* border-color: white;  
+ border-style: solid; */
+ margin-left: auto;
+ margin-top: 5%;
+ /* transform: rotate(0.01turn); */
+}
+.handle {
+ position: absolute;
+ width: 65%;
+ height: 46%;
+ background-color: black;
+ bottom: 45%;
+ left: 18%;
+ /* top left, right, bottom right, left.  / divides horizontal radius and vertical */
+ border-radius: 50% 50% 20% 20%/ 70% 70% 100% 100%;
+ z-index: 1;
+ box-shadow: inset 5px 5px 20px white; 
+}
+.handle-inside{
+ position: absolute;
+ width: 45%;
+ height: 30%;
+ /* background-color: rgb(101, 149, 179); */
+ background-color: rgb(226, 226, 225);
+ bottom: 52%;
+ left: 28%;
+ /* top left, right, bottom right, left.  / divides horizontal radius and vertical */
+ border-radius: 50% 50% 20% 20%/ 70% 70% 100% 100%;
+ z-index: 1;
+}
+@media screen and (max-width: 434px){
+ .KB {
+  /* position: relative; */
+  padding: 10px;
+  margin: auto; 
+  width: 100px;
+  height: 100px;
+  /* margin-left: auto; */
+  /* margin-top: 5%; */
+ }
+}

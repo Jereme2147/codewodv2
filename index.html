@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8" />
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <title>Page Title</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="kb.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="main.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+  crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Cabin|Oxygen" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Racing+Sans+One" rel="stylesheet">
+</head>
+<body>
+  <div class = "container">
+   <div class = "menu">
+     <h1 class="codeWod">Code-Wod</h1>
+    <div class="dropdown" id='drop'>
+      <button id="dropbtn" class="dropbtn">Menu</button>
+      <div id="myDropdown" class="dropdown-content">
+        <ul>
+          <div class="menuBox">
+            <a href="#" id="aboutMenu">
+              <li>About</li>
+            </a>
+          </div>
+          <div class="menuBox">
+            <a href="#" id="wodMenu">
+              <li>Current WOD</li>
+            </a>
+          </div>
+          <div class="menuBox">
+            <a href="#" id="resultsMenu">
+              <li>Last wod results</li>
+            </a>
+          </div>
+          <div class="menuBox">
+            <a href="#" id="blogMenu">
+              <li>Blog</li>
+            </a>
+          </div>
+          <div class="menuBox">
+            <a href="#" id="preWodMenu">
+              <li>Previous Wod</li>
+            </a>
+          </div>
+          <div class="menuBox"> 
+            <a href="#" id="twoBackMenu">
+              <li>Two back</li>
+            </a>
+          </div>
+          <div class="menuBox">
+            <a href="https://drive.google.com/open?id=0B9iic2IK-ZThTmZwS3d4WmZyTk0" target="_blank" id="historicalMenu">
+              <li>Historical Wods</li>
+            </a>
+          </div>
+          <!-- <div class="menuBox">
+            <a href="#" id="contactMenu">
+              <li>Contacts</li>
+            </a>
+          </div> -->
+        </ul>
+      </div>
+    </div>
+    <div class="contactInfo toggleDivs" id="contactInfo">
+      <div id="contactList">
+        <a href="https://twitter.com/jd2147" target="_blank"> <i class="fab fa-twitter fa-3x"></i></a>
+        <a href="mailto:jereme.daniels@gmail.com?Subject=wod%20info" target="_top"> <i class="fas fa-envelope fa-3x"></i></a>
+        <a href="https://www.facebook.com/jereme.daniels" target="_blank"><i class="fab fa-facebook fa-3x"></i></a>
+        <a href="https://github.com/jereme2147" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+      </div>
+    </div>
+   </div>
+   <div class = "main">
+    <div class = "wod content" id="content"></div>
+    <div class = "results" id = "results"></div>
+    <div class = "oneBack" id = "oneBack"></div>
+    <div class = "twoBack" id = "twoBack"></div>
+    <div class="information" id="information">
+      <strong>The purpose: </strong>
+      <ul>
+        <li>
+          These workouts are designed to reflect the timeframe in which first responders are required to be at 100%
+          intensity.
+        </li>
+        <li>
+          Behind cancer, heart attack is the leading killer of first responders. It’s up to us to prevent it.
+        </li>
+        <li>
+          The stronger we are, the less likely we are to be injured.
+        </li>
+        <li>
+          Feel and look better.
+        </li>
+      </ul>
+    
+    
+      <strong>The workouts:</strong>
+      <ul>
+        <li>
+          They will not be flashy or technical.
+        </li>
+        <li>
+          They will be between 5 minutes and 15 minutes.
+        </li>
+        <li>
+          The weight will reflect that which we need to safely manage on the job.
+        </li>
+        <li>
+          Workouts will be released every 3rd day (standard Kelly schedule).
+        </li>
+        <li>
+          The required equipment will be fairly standard. Medicine balls, kettlebells, barbell, bumper plates, jump rope,
+          pull-up
+          bar, and a plyo-box. There will also be rowing. If you don’t have access to a Concept 2 rower, ask for a
+          substitute.
+        </li>
+        <li>
+          The workouts are all scalable. I will provide scaling when it is necessary.
+        </li>
+        <li>
+          Please enter your name and a score. This helps me to make better workouts. If you’re opposed to entering a score,
+          enter
+          a name at a minimum please.
+        </li>
+      </ul>
+    
+      <quote>“The goal is to get fit, make it the best hour of your day, stay safe, turn up the music, high five some
+        people,
+        and blow off some steam. So remember that. Relax. Have fun. Work out.”</quote>
+      </br>
+      -Pat Sherwood
+    </div>
+    <div class="blog" id="blog">
+      <iframe src="https://code-wod.blogspot.com/" width="100%" height="500">
+        <p>Your browser does not support iFrames.</p>
+      </iframe>
+    </div>
+    
+   </div>
+  </div>
+</body>
+</html>
